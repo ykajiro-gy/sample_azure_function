@@ -22,7 +22,8 @@ export function run(context: any, data: any): any {
         context.res = responseFrom('Unexpected data..');
         return context.done();
     }
-    context.log(body);
-    context.res = { ...body, rawData: data };
+    const result = { ...body, rawData: data };
+    context.log(result);
+    context.res = result;
     context.done();
 };
