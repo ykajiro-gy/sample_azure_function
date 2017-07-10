@@ -4,7 +4,7 @@ interface Body {
 
 function bodyFrom(data: any): Body | undefined {
     const { comment: { body } } = data;
-    if (data) {
+    if (body) {
         return { body };
     }
     return undefined;
