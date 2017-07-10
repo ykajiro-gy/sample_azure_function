@@ -1,0 +1,2 @@
+# sample_azure_function
+sample_azure_function
