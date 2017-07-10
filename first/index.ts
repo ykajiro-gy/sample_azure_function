@@ -3,7 +3,8 @@ interface Body {
 }
 
 function bodyFrom(data: any): Body | undefined {
-    const { comment: { body } } = data;
+    const { comment } = data;
+    const body = comment && comment.body;
     if (body) {
         return { body };
     }
